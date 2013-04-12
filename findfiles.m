@@ -28,11 +28,14 @@ icase = false;
 
 % accept optional arguments
 switch nargin
+    case 2
     case 3
         subdirs = varargin{1};
     case 4
         subdirs = varargin{1};
         icase = varargin{2};
+    otherwise
+        error('Incorrect number of input parameters entered')
 end
 
 % ensure proper path construction
