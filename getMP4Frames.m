@@ -53,7 +53,7 @@ for n = 1:numel(fNum)
     
     % write image file
     if ~nargout
-        imname = sprintf('%s_%d.tiff', prefix, fNum(n));
+        imname = sprintf('%s%d.tif', prefix, n)%fNum(n));
         imwrite(F,imname,'TIFF')
     end
 end
