@@ -16,7 +16,7 @@ function convert_fig2eps(varargin)
 
 % default processing options
 EPS = true;
-PDF = true;
+PDF = false;
 res = 300;
 
 % default paths
@@ -79,7 +79,7 @@ for f = 1:numel(src)
         dstname = fullfile(dstname,prefix); % omit extension for now
     end
     
-    if ~existfile(srcname)
+    if ~exist(srcname,'file')
         warning('CONVERT_FIG2EPS:FileNotFound','Could not find source file "%s"!',srcname)
         continue
     end
