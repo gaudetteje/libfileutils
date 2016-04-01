@@ -15,8 +15,8 @@ function convert_fig2eps(varargin)
 
 
 % default processing options
-EPS = true;
-PDF = false;
+EPS = false;
+PDF = true;
 res = 300;
 
 % default paths
