@@ -15,12 +15,6 @@ function files = findfiles(wdir,pat,varargin)
 %   Note:  The regular expression only searches the filename, and not the entire
 %   path as returned
 
-% Author:   Jason Gaudette
-% Company:  Naval Undersea Warfare Center (Newport, RI)
-% Phone:    401.832.6601
-% Email:    gaudetteje@npt.nuwc.navy.mil
-% Date:     20061017
-%
 files={};
 
 subdirs = Inf;
